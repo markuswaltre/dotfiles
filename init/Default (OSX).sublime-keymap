@@ -1,0 +1,27 @@
+[
+	{ "keys": ["ctrl+super+b"], "command": "toggle_side_bar" },
+	{ "keys": ["ctrl+c"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+	{ "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
+	{ "keys": ["alt+up"], "command": "expand_selection", "args": {"to": "word"}, "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["alt+up"], "command": "expand_selection", "args": {"to": "scope"}, "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": false }
+		]
+	},
+	{ "keys": ["alt+super+l"], "command": "auto_indent", "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": true }
+		]
+	},
+	{ "keys": ["alt+super+l"], "command": "reindent", "context":
+		[
+			{ "key": "selection_empty", "operator": "equal", "operand": false }
+		]
+	},
+	{ "keys": ["super+shift+minus"], "command": "unfold_all"},
+	{ "keys": ["super+shift+plus"], "command": "fold_by_level", "args": {"level": 1} }
+]
