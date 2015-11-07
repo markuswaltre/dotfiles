@@ -100,5 +100,15 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 
+# Install some gui applications
+brew cask install atom
+#brew cask install dropbox
+brew cask install firefox
+brew cask install google-chrome
+#brew cask install spotify
+brew cask install sublime-text3
+#brew cask install virtualbox
+brew cask install vlc
+
 # Remove outdated versions from the cellar.
 brew cleanup
