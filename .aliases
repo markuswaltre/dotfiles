@@ -11,15 +11,27 @@ alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
+
 alias g="git"
 alias h="history"
 alias j="jobs"
+alias c="clear"
+
+# Edit / Reload bash_profile
+alias ebash="subl ~/.bash_profile"
+alias sbash="source ~/.bash_profile"
+
+# Apache
+alias apache="sudo apachectl"
+alias ehttpd="subl /etc/apache2/httpd.conf"
+alias evhosts="subl /etc/apache2/vhosts/"
+alias ehosts="subl /etc/hosts"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
+    colorflag="--color"
 else # OS X `ls`
-	colorflag="-G"
+    colorflag="-G"
 fi
 
 # List all files colorized in long format

@@ -1,5 +1,4 @@
 [alias]
-
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
@@ -20,6 +19,20 @@
 
 	# Commit all changes
 	ca = !git add -A && git commit -av
+
+	# bunch of alias
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+	lg = log --oneline
+
+	# Reset the head to commit
+	revert = reset --soft HEAD~1
+	# Unstage file(s)
+	unstage = reset HEAD --
+	# git history
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
 	# Switch to a branch, creating it if necessary
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
@@ -79,9 +92,8 @@
 
 [core]
 
-	# Use custom `.gitignore` and `.gitattributes`
+	# Use custom `.gitignore`
 	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
 
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
 	# [default] trailing-space: looks for spaces at the end of a line

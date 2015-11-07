@@ -244,3 +244,9 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Share files
+transfer() {
+	# write to output to tmpfile because of progress bar
+	tmpfile=$( mktemp -t transferXXX ); curl --progress-bar --upload-file $1 https://transfer.sh/$(basename $1) >> $tmpfile; cat $tmpfile; rm -f $tmpfile;
+}

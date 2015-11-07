@@ -1,0 +1,5 @@
+# Add bin-paths to PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH";
+
+# Add `node_modules/.bin` to the `$PATH`
+export PATH="./node_modules/.bin:$PATH";
