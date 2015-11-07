@@ -1,6 +1,11 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+# Load NVM into shell session
+source $(brew --prefix nvm)/nvm.sh
+# Set node version from .nvmrc or to stable
+[[ -s ".nvmrc" ]] && nvm use || nvm use stable
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
