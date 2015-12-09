@@ -182,3 +182,8 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[credential]
+
+	# Caching your GitHub password in Git
+	helper = osxkeychain
