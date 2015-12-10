@@ -3,10 +3,8 @@
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
-	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
-	"file_exclude_patterns":
-	[
+	"file_exclude_patterns": [
 		".DS_Store",
 		"Desktop.ini",
 		"*.pyc",
@@ -15,8 +13,7 @@
 		".Spotlight-V100",
 		".Trashes"
 	],
-	"folder_exclude_patterns":
-	[
+	"folder_exclude_patterns": [
 		".git",
 		"node_modules"
 	],
@@ -28,9 +25,8 @@
 	"match_brackets": true,
 	"match_brackets_angle": true,
 	"remember_open_files": false,
-	"rulers":
-	[
-		80
+	"rulers": [
+		120
 	],
 	"show_encoding": true,
 	"show_line_endings": true,
