@@ -1,3 +1,11 @@
+# Run nvm use when cd into dir with .nmrc
+function cd () {
+	builtin cd "$@"  # perform the actual cd
+	if [[ -f ".nvmrc" ]]; then
+		nvm use
+	fi
+}
+
 # Simple calculator
 function calc() {
 	local result="";
