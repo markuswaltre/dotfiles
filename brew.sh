@@ -88,17 +88,21 @@ brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
 brew install lua
-brew install lynx
+#brew install lynx
 brew install p7zip
 brew install pigz
 brew install pv
 brew install rename
-brew install rhino
+#brew install rhino
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
 brew install webkit2png
 brew install zopfli
+
+# Hontas added install
+brew install nvm
+brew install mongodb
 
 # Install some gui applications
 brew cask install atom
