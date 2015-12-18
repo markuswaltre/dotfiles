@@ -2,9 +2,10 @@
 export PATH="$HOME/bin:$PATH";
 
 # Load NVM into shell session
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 # Set node version from .nvmrc or to stable
-[[ -s ".nvmrc" ]] && nvm use || nvm use stable
+[[ -f ".nvmrc" ]] && nvm use || nvm use stable
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
