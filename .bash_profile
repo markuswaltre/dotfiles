@@ -7,6 +7,9 @@ export NVM_DIR="$HOME/.nvm"
 # Set node version from .nvmrc or to stable
 [[ -f ".nvmrc" ]] && nvm use || nvm use stable
 
+# Completion for npm
+source <(npm completion)
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
