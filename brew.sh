@@ -101,7 +101,7 @@ brew install webkit2png
 #brew install zopfli
 
 # Hontas added install
-#brew install mongodb
+brew install mongodb
 
 # Install some gui applications
 brew cask install flux
