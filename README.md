@@ -1,4 +1,4 @@
-# ~~Mathias~~ Hontas dotfiles
+# Markus ~~Mathias Hontas~~ dotfiles
 > Forked from [https://github.com/mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
 
 ## Installation
